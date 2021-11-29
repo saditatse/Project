@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+     <div class="cursor"></div>
+    <nav>
+        <h1>Window <img src="./../To Do/icons-1.6.1/icons/windows.svg" height="20" alt=""></h1>
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>Contact</li>
+            <a href="./login.html"><li class="nav-login">Login</li></a>
+            <li class="nav-disabled" title="No Login No Service">Service</li>
+        </ul>
+    </nav>
+    <section>
+        <div class="front-cover">
+
+        </div>
+    </section>
+    <script src="./app.js"></script>
+    <script>
+        var body =  document.querySelector('body')
+        var randomColor = Math.floor((Math.random() * 10));
+        var randomColor1 = Math.floor((Math.random() * 10));
+        var randomColor2 = Math.floor((Math.random() * 10));
+        var randomCollection = randomColor + randomColor1 + randomColor2
+        
+        setInterval(function() {
+            body.style.color=  randomCollection
+        }, 2000);
+    </script>
+</body>
+</html>
